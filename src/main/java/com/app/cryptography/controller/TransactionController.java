@@ -18,5 +18,5 @@ public class TransactionController {
     @PostMapping(value = "/transaction")
     public ResponseEntity<Transaction> createTransaction(@RequestBody @Valid TransactionDto transactionDto){
         return ResponseEntity.ok().body(transactionService.saveTransaction(transactionDto.toEntity()));
-    }
+    } 
 }
